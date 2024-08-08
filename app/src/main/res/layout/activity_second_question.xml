@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="Первый ответ"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/secondAnswerRB"
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="Второй ответ"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/thirdAnswerRB"
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="Третий ответ"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
     </RadioGroup>
 
