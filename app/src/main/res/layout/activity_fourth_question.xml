@@ -15,27 +15,27 @@
         tools:ignore="Miss,MissingConstraints" />
 
     <RadioGroup
-        android:id="@+id/firstAnswersGroupRG"
+        android:id="@+id/fourthAnswersGroupRG"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/toolbarFourthQuestion">
 
         <TextView
-            android:id="@+id/firstQuestionTV"
+            android:id="@+id/fourthQuestionTV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Здесь будет четвертый вопрос"
+            android:text="@string/text_error"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <RadioButton
-            android:id="@+id/firstdAnswerRB"
+            android:id="@+id/firstAnswerRB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Первый ответ"
+            android:text="@string/text_error"
             android:textSize="20sp" />
 
         <RadioButton
@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Второй ответ"
+            android:text="@string/text_error"
             android:textSize="20sp" />
 
         <RadioButton
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Третий ответ"
+            android:text="@string/text_error"
             android:textSize="20sp" />
 
     </RadioGroup>

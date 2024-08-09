@@ -1,6 +1,9 @@
 package com.example.imahistorian
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.RadioButton
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,6 +19,36 @@ class ThirdQuestionActivity : AppCompatActivity() {
         binding = ActivityThirdQuestionBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        binding.thirdQuestionTV.text = QuestionsAndAnswers().thirdQuestion
+        binding.firstAnswerRB.text = QuestionsAndAnswers().firstAnswerForThirdQuestion
+        binding.secondAnswerRB.text = QuestionsAndAnswers().secondAnswerForThirdQuestion
+        binding.thirdAnswerRB.text = QuestionsAndAnswers().thirdAnswerForThirdQuestion
+        val intentFourth = Intent(this, FourthQuestionActivity::class.java)
+        binding.thirdAnswersGroupRG.setOnCheckedChangeListener { group, checkedID ->
+            val result = intent.getStringExtra("2")
+            val radio: RadioButton = findViewById(checkedID)
+            when (radio) {
+                binding.firstAnswerRB -> {
+                    Toast.makeText(this, "Вы заработали 0 баллов :(", Toast.LENGTH_LONG).show()
+                    intentFourth.putExtra("3", (0 + result!!.toInt()).toString())
+                    startActivity(intentFourth)
+                }
+
+                binding.secondAnswerRB -> {
+                    Toast.makeText(this, "Вы заработали 0 баллов :(", Toast.LENGTH_LONG).show()
+                    intentFourth.putExtra("3", (0 + result!!.toInt()).toString())
+                    startActivity(intentFourth)
+                }
+
+                binding.thirdAnswerRB -> {
+                    Toast.makeText(this, "Вы заработали 100 баллов :)", Toast.LENGTH_LONG).show()
+                    intentFourth.putExtra("3", (100 + result!!.toInt()).toString())
+                    startActivity(intentFourth)
+                }
+            }
+        }
+
 
         binding.toolbarThirdQuestion.title = "Третий вопрос"
         //binding.toolbarFirstQuestion.subtitle =

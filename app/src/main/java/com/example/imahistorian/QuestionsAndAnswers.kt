@@ -26,4 +26,20 @@ class QuestionsAndAnswers {
     val firstAnswerForFifthQuestion = "Майский жук"
     val secondAnswerForFifthQuestion = "Скарабей"//правильный
     val thirdAnswerForFifthQuestion = "Таракан"
+
+    val resultCommentFive = "Отлично"
+    val resultCommentFour = "Хорошо"
+    val resultCommentThree = "Удовлетворительно"
+    val resultCommentTwo = "Не удовлетворительно"
+    val resultCommentOne = "Плохо"
+    val resultCommentZero = "Очень плохо"
+
+    val resultInfoFive = "Вы отличный Историк!"
+    val resultInfoFour = "Вы хороший Историк!"
+    val resultInfoThree = "Вы такой себе Историк."
+    val resultInfoTwo = "Вы плохой Историк."
+    val resultInfoOne = "Вы очень плохой Историк :("
+    val resultInfoZero = "Вы вообще не Историк!"
+
+
 }
