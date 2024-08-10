@@ -25,10 +25,10 @@ class FirstQuestionActivity : AppCompatActivity() {
 
         binding.toolbarFirstQuestion.title = "Первый вопрос"
         setSupportActionBar(binding.toolbarFirstQuestion)
-        binding.firstQuestionTV.text = QuestionsAndAnswers().firstQuestion
-        binding.firstAnswerRB.text = QuestionsAndAnswers().firstAnswerForFirstQuestion
-        binding.secondAnswerRB.text = QuestionsAndAnswers().secondAnswerForFirstQuestion
-        binding.thirdAnswerRB.text = QuestionsAndAnswers().thirdAnswerForFirstQuestion
+        binding.firstQuestionTV.text = QuestionsAndAnswers().questions[1]
+        binding.firstAnswerRB.text = QuestionsAndAnswers().answers[1_1]
+        binding.secondAnswerRB.text = QuestionsAndAnswers().answers[1_2]
+        binding.thirdAnswerRB.text = QuestionsAndAnswers().answers[1_3]
 
         val intentSecond = Intent(this, SecondQuestionActivity::class.java)
         binding.firstAnswersGroupRG.setOnCheckedChangeListener { group, checkedID ->

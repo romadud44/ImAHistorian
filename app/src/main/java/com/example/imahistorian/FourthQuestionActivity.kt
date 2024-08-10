@@ -20,10 +20,10 @@ class FourthQuestionActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        binding.fourthQuestionTV.text = QuestionsAndAnswers().fourthQuestion
-        binding.firstAnswerRB.text = QuestionsAndAnswers().firstAnswerForFourthQuestion
-        binding.secondAnswerRB.text = QuestionsAndAnswers().secondAnswerForFourthQuestion
-        binding.thirdAnswerRB.text = QuestionsAndAnswers().thirdAnswerForFourthQuestion
+        binding.fourthQuestionTV.text = QuestionsAndAnswers().questions[4]
+        binding.firstAnswerRB.text = QuestionsAndAnswers().answers[4_1]
+        binding.secondAnswerRB.text = QuestionsAndAnswers().answers[4_2]
+        binding.thirdAnswerRB.text = QuestionsAndAnswers().answers[4_3]
         val intentFifth = Intent(this, FifthQuestionActivity::class.java)
         binding.fourthAnswersGroupRG.setOnCheckedChangeListener { group, checkedID ->
             val result = intent.getStringExtra("3")

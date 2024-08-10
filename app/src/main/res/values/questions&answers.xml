@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="questions">
+        <item>"В каком году был запущен Google?"</item>
+        <item>Кто является царем олимпийских богов в греческой мифологии?</item>
+        <item>Какая планета была понижена до карликовой в 2006 году?</item>
+        <item>Где были проведены первые современные Олимпийские игры?</item>
+        <item>Какому навозному жуку поклонялись древние египтяне?</item>
+    </string-array>
+    <string name="questionOne">В каком году был запущен Google?</string>
+    <string name="questionTwo">Кто является царем олимпийских богов в греческой мифологии?</string>
+    <string name="questionThree">Какая планета была понижена до карликовой в 2006 году?</string>
+    <string name="questionFour">Где были проведены первые современные Олимпийские игры?</string>
+    <string name="questionFive">Какому навозному жуку поклонялись древние египтяне?</string>
+
+</resources>

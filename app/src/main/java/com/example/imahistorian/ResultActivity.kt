@@ -33,38 +33,38 @@ class ResultActivity : AppCompatActivity() {
         when (result) {
             "500" -> {
                 binding.resultTV.setTextColor(Color.GREEN)
-                binding.resultCommentTV.text = QuestionsAndAnswers().resultCommentFive
-                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfoFive
+                binding.resultCommentTV.text = QuestionsAndAnswers().resultComment[5]
+                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfo[5]
             }
 
             "400" -> {
                 binding.resultTV.setTextColor(Color.BLUE)
-                binding.resultCommentTV.text = QuestionsAndAnswers().resultCommentFour
-                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfoFour
+                binding.resultCommentTV.text = QuestionsAndAnswers().resultComment[4]
+                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfo[4]
             }
 
             "300" -> {
                 binding.resultTV.setTextColor(Color.YELLOW)
-                binding.resultCommentTV.text = QuestionsAndAnswers().resultCommentThree
-                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfoThree
+                binding.resultCommentTV.text = QuestionsAndAnswers().resultComment[3]
+                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfo[3]
             }
 
             "200" -> {
                 binding.resultTV.setTextColor(Color.YELLOW)
-                binding.resultCommentTV.text = QuestionsAndAnswers().resultCommentTwo
-                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfoTwo
+                binding.resultCommentTV.text = QuestionsAndAnswers().resultComment[2]
+                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfo[2]
             }
 
             "100" -> {
                 binding.resultTV.setTextColor(Color.BLACK)
-                binding.resultCommentTV.text = QuestionsAndAnswers().resultCommentOne
-                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfoOne
+                binding.resultCommentTV.text = QuestionsAndAnswers().resultComment[1]
+                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfo[1]
             }
 
             "0" -> {
                 binding.resultTV.setTextColor(Color.RED)
-                binding.resultCommentTV.text = QuestionsAndAnswers().resultCommentZero
-                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfoZero
+                binding.resultCommentTV.text = QuestionsAndAnswers().resultComment[0]
+                binding.resultInfoTV.text = QuestionsAndAnswers().resultInfo[0]
             }
         }
 
