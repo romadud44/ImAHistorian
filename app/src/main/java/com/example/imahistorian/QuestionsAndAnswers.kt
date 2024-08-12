@@ -1,7 +1,6 @@
 package com.example.imahistorian
 
 class QuestionsAndAnswers {
-
     val questions = mapOf(
         1 to "В каком году был запущен Google?",
         2 to "Кто является царем олимпийских богов в греческой мифологии?",
@@ -9,7 +8,6 @@ class QuestionsAndAnswers {
         4 to "Где были проведены первые современные Олимпийские игры?",
         5 to "Какому навозному жуку поклонялись древние египтяне?"
     )
-
     val answers = mapOf(
         1_1 to "1999",
         1_2 to "1997",
@@ -27,7 +25,6 @@ class QuestionsAndAnswers {
         5_2 to "Скарабей",
         5_3 to "Таракан"
     )
-
     val resultComment = listOf(
         "Очень плохо",
         "Плохо",
@@ -44,6 +41,4 @@ class QuestionsAndAnswers {
         "Вы хороший Историк!",
         "Вы отличный Историк!"
     )
-
-
 }

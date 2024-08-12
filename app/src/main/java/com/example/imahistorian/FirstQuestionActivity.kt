@@ -1,8 +1,9 @@
+@file:Suppress("PackageDirectoryMismatch")
+
 package com.example.imahistorian
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.RadioButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -13,6 +14,7 @@ import com.example.imahistorian.databinding.ActivityFirstQuestionBinding
 
 class FirstQuestionActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFirstQuestionBinding
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
